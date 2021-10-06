@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testing dummy"
+        android:id="@+id/titles"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Dummy"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="#69BF68"
+            android:textSize="17sp"
+            android:id="@+id/target"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raised Dummy"
+            android:textColor="#E82E2E"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:id="@+id/raised"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="3"
+            android:id="@+id/des"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:text="Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy Dummy dummy"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+    />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="top"
+        android:textColor="#15A0D7"
+        android:background="@android:color/transparent"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+
+  />
+<include
+    layout="@layout/footer"
+
+  />
+
+
+</LinearLayout>
